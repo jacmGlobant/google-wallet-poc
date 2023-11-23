@@ -1,0 +1,31 @@
+{
+   "id": "ISSUER_ID.CLASS_ID",
+   "classTemplateInfo": {
+     "cardTemplateOverride": {
+       "cardRowTemplateInfos": [
+         {
+           "twoItems": {
+             "startItem": {
+               "firstValue": {
+                 "fields": [
+                   {
+                     "fieldPath": "object.textModulesData['name']"
+                   }
+                 ]
+               }
+             },
+             "endItem": {
+               "firstValue": {
+                 "fields": [
+                   {
+                     "fieldPath": "object.textModulesData['member_tier']"
+                   }
+                 ]
+               }
+             }
+           }
+         }
+       ]
+     }
+   }
+ }

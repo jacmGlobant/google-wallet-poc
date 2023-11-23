@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proven-octane-405712",
+  "private_key_id": "6a51db244a77c8b6be7a225e628e84c26a170f99",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBePErMacEn0aJ\n/XqoIzBzIuT87crwdBaY3+ohP88IROGDV0J1mL2AvNmxzWmiOrC7Mb3AM8AiVCNO\nlczgiKd0Q88nV209NU575GBLcSIQ/ZeCM8xJd+hCYLFWosHUZnE7MGiClO1Jzf12\nTUdBryMkElp9YwguG2FYbcixzwWFmrcuKeE3mQO7nXUlXiYs59fX1l6jXOnKScbF\nRGAl32QlFwYfwXIUsaYWYfL6iofkDxbCQsB/wLbMs21+Hg/hIZMd6PEhQqkbIzAE\n9w0mNh7OxycyY8F+CfT1IAOf13ykTDt4stO2A52eA5po7R7TTZ0nOWo46BY+RkJb\nowHnwEEzAgMBAAECggEAAK1UlUCm16p3GqNyshbKn1ZOf8VcTlMBrg2dXjL5zQFw\n2nMOcvwg6VoSzaCCa/+t8+CSEzl4xMq6Lino5SQLNt5DSjKaxszkwOuvvQdn8FFk\n81MWYLsSkLHwot1LzW5bwUVwhh4YO5q49jnb3CWijkYc6OucMRt8bDnuRyaA28Iv\nKcnBvJ21U58aurxNdD9G0qx4PMW+pQN9W70Jp/9czFHZAIJRw6EfF5N2NMXxNnjv\n6w+tIt5WQx34N6ITd1QO+aaI10VY6B64VfGCRCQXhnfKl1lNkGCZQVtjluRuS1fE\nJWO9aKh/KVT7pQwO1wxmz2hfiy/3AmWDknnfnz+klQKBgQDoWrl6HGT4gjhQjYul\nDqeWq5m+bZ39dXaptOHJmD/7R6jwdzCta6R8uXY5gI5h4Fsay0B6/AEJTk0sPfDR\nAwj6fbRHECzhLaKOHyyg4E7b3MZaCdoSaK62zE3JmvN2YqywezHNAd5qqFRM43nm\neTktJbyD7qlbt5SmJ8h3sYYJNQKBgQDVKUSoVquvSYhi99yLitz67dEoUkplC8/9\nk6c/eMl0F5k3LhZine87ZPFXhuyZeE0rPUO9rqtWS9mnviTd4vJedDq68a8JvJmc\nLPIP0EMz7xt2P8ktN9wDu6qUPYuzAGH1Txz1o/u6tLOwtFoRBZRGYdqsHlpKLFGH\nYM9Umg7VxwKBgQCEuparP58aKmD6+vBjeEyZkCsCEeInUDtZ1D8KhtM9uoCx5JRE\n7HGI4fS8AkjTdnL0iliqKFx7MWR6OmPfMammVbpuwbmxY/0wzHQU7i1+AM65zljp\nHS14tJpW6RHcdZ+KLMWVA1VHfiKxzVvsISFdPepDP0k1YFgk1iL45MrZZQKBgQCL\nSH7zXEasr+itenYivCbu08ySg0rXQeOzNvLW148TC4Ry+Otpnvc+IRRN8/zPvzr1\nYP/Nhr+wELn1EJq4Xd2u+FWT5+5O92yMDxZQXO48liWkm8NRh6l8yviICrsoyLw5\ndWtf2rnW4tJzSTV8399mKfSf+OlYhCL1yb1P86Zz6wKBgG0GB/pw/2HLsCov3Bgu\nDd9tANf2MvCx5RdwbCU3qeolaX4bqVXZ0qA/yWZnbjh9lWoZd/JfyyEWk/0FrCTd\nrDwvnWD1t6N7ie/PR/0uUZnGX3tVLzGw80SI5axW9c8LDb6CV5JhYgx6DtCaFPEa\npYpCzmh+9oOScsUcNu18mPJp\n-----END PRIVATE KEY-----\n",
+  "client_email": "shrss-google-wallet-demo@proven-octane-405712.iam.gserviceaccount.com",
+  "client_id": "102826518110520698625",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shrss-google-wallet-demo%40proven-octane-405712.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

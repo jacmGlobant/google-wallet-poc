@@ -1,0 +1,52 @@
+{
+   "id": "ISSUER_ID.OBJECT_ID",
+   "classId": "ISSUER_ID.GENERIC_CLASS_ID",
+   "genericType": "GENERIC_TYPE_UNSPECIFIED",
+   "logo": {
+     "sourceUri": {
+       "uri": "https://storage.googleapis.com/wallet-lab-tools-codelab-artifacts-public/pass_google_logo.jpg"
+     },
+     "contentDescription": {
+       "defaultValue": {
+         "language": "en-US",
+         "value": "LOGO_IMAGE_DESCRIPTION"
+       }
+     }
+   },
+   "cardTitle": {
+     "defaultValue": {
+       "language": "en-US",
+       "value": "Hard Rock"
+     }
+   },
+   "subheader": {
+     "defaultValue": {
+       "language": "en-US",
+       "value": "Member Number"
+     }
+   },
+   "header": {
+     "defaultValue": {
+       "language": "en-US",
+       "value": "9876543210"
+     }
+   },
+   "textModulesData": [
+     {
+       "id": "name",
+       "header": "NAME",
+       "body": "JOHN RAMBO"
+     },
+     {
+       "id": "member_tier",
+       "header": "MEMBER TIER",
+       "body": "LEGEND"
+     }
+   ],
+   "barcode": {
+     "type": "QR_CODE",
+     "value": "BARCODE_VALUE",
+     "alternateText": ""
+   },
+   "hexBackgroundColor": "#4285f4"
+ }

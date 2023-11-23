@@ -1,0 +1,30 @@
+{
+  "name": "google-wallet-server-poc",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/sensible": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.9.0",
+    "fastify-plugin": "^4.0.0",
+    "google-auth-library": "^9.2.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
