@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const path = require('path');
-const { GoogleAuth } = require('google-auth-library');
 const jwt = require('jsonwebtoken');
 
 let issuerId = process.env.ISSUER_ID;
@@ -12,28 +11,21 @@ const credentials = require(path.resolve(keyFilePath));
 const genericObject = require(path.resolve('./helpers/jwt-google-pass-generator/templates/loyalty_card_pass.json'));
 
 const _getObjectId = ()  => {
-  //  const objectSuffix =  Math.floor(Date.now() / 1000).toString();
-   const objectSuffix =  'codelab_object';
+   const objectSuffix =  Math.floor(Date.now() / 1000).toString();
    return `${issuerId}.${objectSuffix}`;
 }
 
-// const httpClient = new GoogleAuth({
-//   credentials: credentials,
-//   scopes: 'https://www.googleapis.com/auth/wallet_object.issuer'
-// });
-
 const getJWTGooglePass = (data) => {
 
-   genericObject.id = _getObjectId();
-   genericObject.classId = `${issuerId}.${classSuffix}`;
-
-   genericObject.header.defaultValue.value = data.memberNumber;
-   genericObject.textModulesData[0].body.value = data.name;
-   genericObject.textModulesData[1].body.value = data.tier;
-   genericObject.barcode.value = data.memberNumber;
+  genericObject.id = _getObjectId();
+  genericObject.classId = `${issuerId}.${classSuffix}`;
+  genericObject.header.defaultValue.value = data.accountNumber;
+  genericObject.textModulesData[0].body = data.name;
+  genericObject.textModulesData[1].body = data.tier;
+  genericObject.barcode.value = data.accountNumber;
 
    const claims = {
-     iss: credentials.client_email, // `client_email` in service account file.
+     iss: credentials.client_email,
      aud: 'google',
      origins: ['http://localhost:3000'],
      typ: 'savetowallet',
@@ -41,8 +33,6 @@ const getJWTGooglePass = (data) => {
        genericObjects: [genericObject],
      },
    };
-
-  //  console.log(JSON.stringify(claims));
 
    return jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
 }

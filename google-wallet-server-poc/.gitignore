@@ -59,3 +59,6 @@ profile*
 
 # certificates
 certificates
+
+# omit .env
+.env
