@@ -15,8 +15,16 @@ const _getObjectId = ()  => {
    return `${issuerId}.${objectSuffix}`;
 }
 
+const mapBgToTier = {
+  'Star': '#C12033',
+  'Legend': '#226093',
+  'Icon': '#226093',
+  'X': '#101820'
+}
+
 const getJWTGooglePass = (data) => {
 
+  genericObject.hexBackgroundColor = mapBgToTier[data.tier];
   genericObject.id = _getObjectId();
   genericObject.classId = `${issuerId}.${classSuffix}`;
   genericObject.header.defaultValue.value = data.accountNumber;
