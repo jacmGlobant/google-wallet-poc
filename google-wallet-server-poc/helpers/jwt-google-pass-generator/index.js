@@ -5,9 +5,10 @@ const jwt = require('jsonwebtoken');
 
 let issuerId = process.env.ISSUER_ID;
 let classSuffix = process.env.CLASS_SUFFIX;
-const keyFilePath = process.env.GOOGLE_APPLICATION_CREDENTIALS || 'certificates/shrss-demo-google-wallet.json';
 
-const credentials = require(path.resolve(keyFilePath));
+const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+
 const genericObject = require(path.resolve('./helpers/jwt-google-pass-generator/templates/loyalty_card_pass.json'));
 
 const _getObjectId = ()  => {
@@ -18,7 +19,7 @@ const _getObjectId = ()  => {
 const mapBgToTier = {
   'Star': '#C12033',
   'Legend': '#226093',
-  'Icon': '#226093',
+  'Icon': '#CF9F35',
   'X': '#101820'
 }
 
@@ -33,7 +34,7 @@ const getJWTGooglePass = (data) => {
   genericObject.barcode.value = data.accountNumber;
 
    const claims = {
-     iss: credentials.client_email,
+     iss: CLIENT_EMAIL,
      aud: 'google',
      origins: ['http://localhost:3000'],
      typ: 'savetowallet',
@@ -42,7 +43,7 @@ const getJWTGooglePass = (data) => {
      },
    };
 
-   return jwt.sign(claims, credentials.private_key, {algorithm: 'RS256'});
+   return jwt.sign(claims, PRIVATE_KEY, {algorithm: 'RS256'});
 }
 
 
