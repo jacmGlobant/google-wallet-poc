@@ -1,7 +1,6 @@
 {
    "id": "ISSUER_ID.OBJECT_ID",
    "classId": "ISSUER_ID.GENERIC_CLASS_ID",
-   "genericType": "GENERIC_TYPE_UNSPECIFIED",
    "logo": {
      "sourceUri": {
        "uri": "https://storage.googleapis.com/wallet-lab-tools-codelab-artifacts-public/pass_google_logo.jpg"
